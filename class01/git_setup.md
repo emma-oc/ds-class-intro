@@ -70,6 +70,48 @@ Rename/move a file in the repo
 ### `git stash`
 Save your changes to a “stash”, but don’t commit them. Useful if you might want to come back to things later, but want to wipe your changes clean right now.
 
+# Task for the class:
+
+1. In terminal/command line, navigate to the folder you want to put this repo.
+
+2. Clone the repo
+```
+git clone https://github.com/Tian-Su/intro_to_data_science_2017.git
+cd intro_to_data_science_2017
+```
+
+3. Check your current branch
+```
+git branch
+```
+
+4. Switch to branch `class01`
+```
+git branch class01 origin/class01
+git checkout class01
+```
+
+5. Navigate to the folder `class01`. Create a test file with your name
+```
+cd class01
+touch <your_name.txt>
+```
+
+6. Add the newly ceated file
+```
+git add <your_name.txt>
+```
+7. Commit the change
+```
+git commit -m "test git function"
+```
+8. push the change to remote
+
+```
+# you many need to do 'git pull' (pull the most recent change) first, if you see the promp
+
+git push
+```
 
 
 ## Git Cheatsheet
