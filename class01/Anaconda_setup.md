@@ -44,10 +44,10 @@ When prompted `The following NEW packages will be INSTALLED`, enter `y` to proce
 When creating an environment, you can specify which version of Python to install in the environment. This command installs the most recent version of Python 3. To install a specific version, for example you can use `conda create -n itds python=3.5` for Python 3.5.
 
 ### Enter and leave the environment
-Use `source activate py3basics` to enter the environment you just created on Mac OSX/Linux. 
+Use `conda activate py3basics` or `source activate py3basics` to enter the environment you just created on Mac OSX/Linux. 
 On Windows, use `activate py3basics`.
 
-To leave the environment, type `source deactivate` on OSX/Linux. 
+To leave the environment, use `conda deactivate` or `source deactivate` (the latter command may give you error message sometimes depending on your setting) on OSX/Linux. 
 On Windows, use `deactivate`.
 
 For the next steps, let's activate and stay in the `py3basics` environment.
@@ -81,13 +81,13 @@ So here are the commands we want to run to create the environment we need for th
 # (using MAC)
 conda create -n py3basics python=3
 conda env list
-source activate py3basics
+conda activate py3basics
 conda list
 conda install numpy pandas jupyter notebook git
 conda list
 conda env export > environment.yml
 cat environment.yml
-source deactivate
+conda deactivate
 conda env list
 
 # windows should be similar with some modification
