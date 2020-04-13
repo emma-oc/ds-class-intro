@@ -24,26 +24,69 @@ If you do not have a GitHub account yet, please go ahead and create one. Follow 
 
 If you're interested, spend 10 min to read and follow [this `Hello-Would` tutorial](https://guides.github.com/activities/hello-world/) to get some initial ideas for version control, repos, and how to use GitHub. 
 
+# Using Git
+![Git Flow](https://git-scm.com/book/en/v2/images/areas.png)
+
+The Git **directory** is where Git stores the metadata and object database for your project. This is the most important part of Git, and it is what is copied when you `clone` a repository from another computer.
+
+The basic Git workflow goes something like this:
+
+* You modify files in your working directory (sometime we refer to this as **local**).
+
+* You selectively stage just those changes you want to be part of your next `commit`, which adds only those changes to the staging area.
+
+* You do a `commit`, which takes the files as they are in the staging area and stores that snapshot permanently to your Git directory.
+
+If a particular version of a file is in the Git directory, it’s considered *committed*. If it has been modified and was added to the staging area, it is *staged*. And if it was changed since it was checked out but has not been staged, it is *modified*. In the next section, you’ll learn more about these states and how you can either take advantage of them or skip the staged part entirely.
+
 # Git basics
+## First things first
+### Git configuration
+The first thing you should if probably set up your user name and email address. This is important because every Git commit uses this information:
+
+```
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+```
+As you probably see here, the `--global` option here will allow Git always use that information for anything you do on that system. If you want to override this with a different name or email address for specific projects, you can run the command without the `--global` option when you’re in that project.
+
+You can use `git config --list` to check current configuration of your Git.
+
 ### Get an existing repo
+Creating a local copy of a Git repo. Nagivate to the directory where you want to store the repo (`cd <your/path/to/local/directory>`), then 
+
 `git clone <repo url goes here>`
 ### Create a new repo
+You can also create a new repo from sratch. In the directory you hope to create a repo for, do the following to initiate a new repo
+
 `git init <project name goes here>`
+
+## Making and recording changes to the files
+Once a repo is created for your working directory, each file in your working directory will be in one of the following statuses:  untracked, unmodified, modified, or staged. Tracked files are files that Git knows about, while untracked files are not known by the repo before added.
+
+![](https://git-scm.com/book/en/v2/images/lifecycle.png)
+
+You can use `git status` to check the status of the files in working directory any time.
 
 ## When you’re ready to push code
 
 ### 1. See what’s changed since the last commit
 `git status` shows files that have changed or are untracked
-`git diff [optional: filename]` shows the changes themselves
+`git diff [optional: filename]` shows the changes themselves (e.g. color-coded deletions and additions)
 
 ### 2. “Stage” the things you want to include in your commit
-This includes both files that have changed and new files you want to add.
+This includes both files that have changed and new files you want to add to "staging area".
 
 `git add <file or directory>`
+
+If you want to add everything in the working directory, you can use shortcut `git add .`, there will include everything except for listed in `.gitingore` if you have one.
+
+You can use `git diff --cached` to check what you've staged so far.
 
 ### 3. Commit your changes and add a useful message
 
 `git commit -m ‘message goes here’`
+The message should be a short summary of what the changes are. If you don't use the `-m` option, Git will launch your text editor for you to enter the message. 
 
 ### 4. (optional) Pull from the origin repo
 
@@ -51,25 +94,54 @@ This includes both files that have changed and new files you want to add.
 
 If any other changes were made since you last pulled, this will attempt to merge them with yours. If you don’t do this and you need to, the remote repo will tell you.
 
-### 5. Push to the origin repo
+### 5. Push to the remote repo
+Remote repositories are versions of your project that are hosted on the Internet (e.g. GitHub) or network somewhere. You'll need a remote repo to collaborate with others. 
 
-`git push`
+You can check your remote for a repo by `git remote`. You'll probably see`origin` as it is the default name Git gives to the server you cloned from.
 
+`git push <remote> <branch>`
+
+This command pushes the changes you have commited to the remote. If you have the remote hosted on GitHub, you'll see the changes there now.
+
+## How to undo things
+### Unstaging a Staged File
+`git reset -HEAD <file name>`
+
+### Unmodifying a Modified File (DANGER!)
+> It’s important to understand that git checkout -- <file> is a dangerous command. Any local changes you made to that file are gone — Git just replaced that file with the most recently-committed version. Don’t ever use this command unless you absolutely know that you don’t want those unsaved local changes.
+
+You will revet the file to its last commit but will lose all untracked uncommited changed.
+`git checkout -- <file name>`
+
+
+ 
+ 
 ## Additional useful commands
+### `git remote add <shortname> <url>`
+Add remote to repo.
 ### `git log`
 See the history of commits present in your copy of the repo.
-### `git checkout <revision #, or branch name> <optional filename>`
-If you give a revision number, this changes your files to how they were when that commit was the latest. Think of this like a time machine for going to old commits, without changing/losing anything in the present repo.
-
-**WARNING:** if you specify a file, using `git checkout` without committing your latest changes will wipe them out.
-
-If you give a branch name, `git checkout` will switch you to the most recent commit in that named branch and make that branch the active one (so new commits will be added to that branch)
 ### `git rm`
-Remove a file from the repo
+Remove a file from the repo. If you'd like to remove a file from Git repo but not your local directory, learn about `git rm --cache`.
 ### `git mv`
 Rename/move a file in the repo
 ### `git stash`
 Save your changes to a “stash”, but don’t commit them. Useful if you might want to come back to things later, but want to wipe your changes clean right now.
+### `git branch`
+List all the branches for the repo. The current one will have a * next to it.
+
+### `git branch <branch name>`
+Create a new branch with <branch name>.
+
+**Note**: this will only create the new branch but will not automatically switch to the new branch. Use `git checkout -b <branch name>` for creating and checking out new branch at the same time.
+
+### `git checkout <revision #, or branch name> <optional filename>`
+If you give a revision number, this changes your files to how they were when that commit was the latest. Think of this like a time machine for going to old commits, without changing/losing anything in the present repo.
+
+If you give a branch name, `git checkout` will switch you to the most recent commit in that named branch and make that branch the active one (so new commits will be added to that branch)
+
+**WARNING:** if you specify a file, using `git checkout` without committing your latest changes will wipe them out.
+
 
 # Task for the class:
 
@@ -77,7 +149,7 @@ Save your changes to a “stash”, but don’t commit them. Useful if you might
 
 2. Clone the repo
 ```
-git clone https://github.com/Yue-Duan/ds-class-intro.git
+git clone https://github.com/emma-oc/ds-class-intro.git
 cd ds-class-intro
 ```
 
@@ -108,12 +180,40 @@ git commit -m "test git function"
 ```
 8. push the change to remote
 
-```
-# you many need to do 'git pull' (pull the most recent change) first, if you see the promp
+	```
+	# you many need to do 'git pull' (pull the most recent change) first, if you see the promp
+	
+	git push
+	```
+9. (Optional) Create a new branch with your name, make and commit some changes, then try to merge the changes to branch `class01`.
 
-git push
-```
+## Advanced: Branching+Merging Basics
+Let's walk through [a scenario](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) as example:
+> Let’s go through a simple example of branching and merging with a workflow that you might use in the real world. You’ll follow these steps:
+> 
+* Do some work on a website.
+>
+* Create a branch for a new user story you’re working on.
+>
+* Do some work in that branch.
+> 
+At this stage, you’ll receive a call that another issue is critical and you need a hotfix. You’ll do the following:
+> 
+* Switch to your production branch.
+> 
+* Create a branch to add the hotfix.
+> 
+* After it’s tested, merge the hotfix branch, and push to production.
+> 
+* Switch back to your original user story and continue working.
 
+![](https://git-scm.com/book/en/v2/images/basic-branching-1.png)
+![](https://git-scm.com/book/en/v2/images/basic-branching-3.png)
+![](https://git-scm.com/book/en/v2/images/basic-branching-4.png)
+![](https://git-scm.com/book/en/v2/images/basic-branching-5.png)
+![](https://git-scm.com/book/en/v2/images/basic-branching-6.png)
+![](https://git-scm.com/book/en/v2/images/basic-merging-1.png)
+![](https://git-scm.com/book/en/v2/images/basic-merging-2.png)
 
 ## Git Cheatsheet
 [PDF](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
