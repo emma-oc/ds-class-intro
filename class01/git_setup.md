@@ -189,6 +189,7 @@ git commit -m "test git function"
 
 ## Advanced: Branching+Merging Basics
 Let's walk through [a scenario](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) as example:
+
 > Let’s go through a simple example of branching and merging with a workflow that you might use in the real world. You’ll follow these steps:
 > 
 * Do some work on a website.
