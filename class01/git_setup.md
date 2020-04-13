@@ -216,5 +216,7 @@ At this stage, you’ll receive a call that another issue is critical and you ne
 ![](https://git-scm.com/book/en/v2/images/basic-merging-1.png)
 ![](https://git-scm.com/book/en/v2/images/basic-merging-2.png)
 
+On the branch you'd like to merge into: `git merge <branch to be merged in>`
+
 ## Git Cheatsheet
 [PDF](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
