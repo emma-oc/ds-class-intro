@@ -7,7 +7,7 @@ Welcome to the intro-level DS class where we will learn about python basics and 
 #### 1. Python basics
 You can run python in different settings, for example, you can use `jupyter` notebook for interactive exploration, use interpreter in command line by typing `python` in terminal (you'll see `>>>` prompt appear), or run python script in command line by `python <your_script>.py`. We will be using notebooks for the class as it's easy to follow with [markdown](https://guides.github.com/features/mastering-markdown/) and easy to interact with.
 
-[class01](https://github.com/emma-oc/ds-class-intro/tree/master/class01):
+[class01](https://github.com/emma-oc/ds-class-intro/tree/class01/class01):
 
 	0. Environment set up
 	1. Assign values to variables and simple arithmetics
