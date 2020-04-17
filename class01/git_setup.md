@@ -194,6 +194,8 @@ git commit -m "test git function"
 	git push
 	```
 9. (Optional) Create a new branch with your name, make and commit some changes, then try to merge the changes to branch `class02`.
+	
+	Hint: you can try creating a branch from a specific branch by `git checkout -b [new branch name] [old branch name]`
 
 ## Advanced: Branching+Merging Basics
 Let's walk through [a scenario](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) as example:
@@ -231,3 +233,5 @@ On the branch you'd like to merge into: `git merge <branch to be merged in>`
 
 ## Interactive tutorial (highly recommend!)
 You can learn the basic ideas about version control, commits, branching, merging, pushing, and more at [https://learngitbranching.js.org/?locale=en_US](https://learngitbranching.js.org/?locale=en_US)
+
+Recommend at least finish first 8 levels in `Main` tab and first 4 in `Remote` tab.
