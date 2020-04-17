@@ -24,21 +24,6 @@ If you do not have a GitHub account yet, please go ahead and create one. Follow 
 
 If you're interested, spend 10 min to read and follow [this `Hello-Would` tutorial](https://guides.github.com/activities/hello-world/) to get some initial ideas for version control, repos, and how to use GitHub. 
 
-# Using Git
-![Git Flow](https://git-scm.com/book/en/v2/images/areas.png)
-
-The Git **directory** is where Git stores the metadata and object database for your project. This is the most important part of Git, and it is what is copied when you `clone` a repository from another computer.
-
-The basic Git workflow goes something like this:
-
-* You modify files in your working directory (sometime we refer to this as **local**).
-
-* You selectively stage just those changes you want to be part of your next `commit`, which adds only those changes to the staging area.
-
-* You do a `commit`, which takes the files as they are in the staging area and stores that snapshot permanently to your Git directory.
-
-If a particular version of a file is in the Git directory, it’s considered *committed*. If it has been modified and was added to the staging area, it is *staged*. And if it was changed since it was checked out but has not been staged, it is *modified*. In the next section, you’ll learn more about these states and how you can either take advantage of them or skip the staged part entirely.
-
 # Git basics
 ## First things first
 ### Git configuration
@@ -61,6 +46,21 @@ You can also create a new repo from sratch. In the directory you hope to create 
 
 `git init <project name goes here>`
 
+## Using Git
+![Git Flow](https://git-scm.com/book/en/v2/images/areas.png)
+
+The Git **directory** is where Git stores the metadata and object database for your project. This is the most important part of Git, and it is what is copied when you `clone` a repository from another computer.
+
+The basic Git workflow goes something like this:
+
+* You modify files in your working directory (sometime we refer to this as **local**).
+
+* You selectively stage just those changes you want to be part of your next `commit`, which adds only those changes to the staging area.
+
+* You do a `commit`, which takes the files as they are in the staging area and stores that snapshot permanently to your Git directory.
+
+If a particular version of a file is in the Git directory, it’s considered *committed*. If it has been modified and was added to the staging area, it is *staged*. And if it was changed since it was checked out but has not been staged, it is *modified*. In the next section, you’ll learn more about these states and how you can either take advantage of them or skip the staged part entirely.
+
 ## Making and recording changes to the files
 Once a repo is created for your working directory, each file in your working directory will be in one of the following statuses:  untracked, unmodified, modified, or staged. Tracked files are files that Git knows about, while untracked files are not known by the repo before added.
 
@@ -68,7 +68,12 @@ Once a repo is created for your working directory, each file in your working dir
 
 You can use `git status` to check the status of the files in working directory any time.
 
-## When you’re ready to push code
+## Understanding `local` and `remote`
+You can do the version control 100% on your local repo using Git. You can navigate between `local` and `remote` to keep track of changes as well as collaborate.
+
+![](https://github.com/Tian-Su/intro_to_data_science_2017/blob/master/figures/github_fork_pull_request.png?raw=true)
+
+## When you’re ready to `push` code
 
 ### 1. See what’s changed since the last commit
 `git status` shows files that have changed or are untracked
@@ -104,7 +109,7 @@ You can check your remote for a repo by `git remote`. You'll probably see`origin
 This command pushes the changes you have commited to the remote. If you have the remote hosted on GitHub, you'll see the changes there now.
 
 ## How to undo things
-### Unstaging a Staged File
+### Unstage a Staged File
 `git reset -HEAD <file name>`
 
 ### Unmodifying a Modified File (DANGER!)
@@ -113,7 +118,10 @@ This command pushes the changes you have commited to the remote. If you have the
 You will revet the file to its last commit but will lose all untracked uncommited changed.
 `git checkout -- <file name>`
 
+### Revert/Reset a commit
+`git revert HEAD`
 
+`git reset HEAD^`
  
  
 ## Additional useful commands
@@ -158,15 +166,15 @@ cd ds-class-intro
 git branch
 ```
 
-4. Switch to branch `class01`
+4. Switch to branch `class02`
 ```
-git branch class01 origin/class01
-git checkout class01
+git branch class02 origin/class02
+git checkout class02
 ```
 
-5. Navigate to the folder `class01`. Create a test file with your name
+5. Navigate to the folder `class02`. Create a test file with your name
 ```
-cd class01
+cd class02
 touch <your_name.txt>
 ```
 
@@ -185,7 +193,7 @@ git commit -m "test git function"
 	
 	git push
 	```
-9. (Optional) Create a new branch with your name, make and commit some changes, then try to merge the changes to branch `class01`.
+9. (Optional) Create a new branch with your name, make and commit some changes, then try to merge the changes to branch `class02`.
 
 ## Advanced: Branching+Merging Basics
 Let's walk through [a scenario](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) as example:
@@ -219,4 +227,7 @@ At this stage, you’ll receive a call that another issue is critical and you ne
 On the branch you'd like to merge into: `git merge <branch to be merged in>`
 
 ## Git Cheatsheet
-[PDF](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
+[PDF](https://education.github.com/git-cheat-sheet-education.pdf)
+
+## Interactive tutorial (highly recommend!)
+You can learn the basic ideas about version control, commits, branching, merging, pushing, and more at [https://learngitbranching.js.org/?locale=en_US](https://learngitbranching.js.org/?locale=en_US)
