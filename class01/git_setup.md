@@ -155,9 +155,13 @@ If you give a branch name, `git checkout` will switch you to the most recent com
 
 1. In terminal/command line, navigate to the folder you want to put this repo.
 
-2. Clone the repo
+2. (Skip this step if you already forked the repo previously) 
+
+	Fork the [class repo](https://github.com/emma-oc/ds-class-intro) to your GitHub account. Your repo should look something like `https://github.com/your-user-name/ds-class-intro`
+
+2. Clone the forked repo to your local directory
 ```
-git clone https://github.com/emma-oc/ds-class-intro.git
+git clone https://github.com/your-user-name/ds-class-intro.git
 cd ds-class-intro
 ```
 
@@ -167,12 +171,15 @@ git branch
 ```
 
 4. Switch to branch `class02`
-```
-git branch class02 origin/class02
-git checkout class02
-```
 
-5. Navigate to the folder `class02`. Create a test file with your name
+	*Note: if you forked the repo earlier, you'll probably need to sync with upstream to get the new branch `class02`*
+	
+	```
+	git branch class02 origin/class02
+	git checkout class02
+	```
+
+6. Navigate to the folder `class02`. Create a test file with your name
 ```
 cd class02
 touch <your_name.txt>
