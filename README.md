@@ -12,14 +12,17 @@ You can run python in different settings, for example, you can use `jupyter` not
 	0. Environment set up
 	1. Assign values to variables and simple arithmetics
 	2. `Print` and simple string manimulation
-	3. Value comparison and conditions using `if-elif-else`
+[class02](https://github.com/emma-oc/ds-class-intro/tree/class02/class02)
 
-Upcoming topics:
-	
+	3. Value comparison and conditions using `if-elif-else`
 	4. Collections: list, tuple, set, and dictionary
 	5. Iteration: loops and comprehensions
 	6. Writing functions
+
+Upcoming topics:
+	
 	7. Reading and writing files
+	8. Useful basic models
 	9. Coding challenge examples on HackerRank
 
 #### 2. Data manipulation using `pandas`
