@@ -262,13 +262,13 @@ git commit -m "test git function"
 	
 	
 # Instructions for Homework 1 Submission:
-1. Create a new branch named `homework01`. You will be working on your homework on this branch.
+1. Create a new local branch named `homework01`. You will be working on your homework on this branch.
 2. Create a new jyputer notebook for `Exercise 3.` and `Exercise 4.`. Copy/Paste the problems is optional, but at least number your answers so we know which problem it is.
-3. Push your commits on the new branch `homework01` to your remote repo (you've learned this in Git exercise above).
+3. Push your commits on the new branch `homework01` to your remote repo (you've learned this in the Git exercise above).
 4. Pull request your answers to `homework01` branch in you own forked repo following [Creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 5. Pull request your answers to `class02` branch in my original (upstream) repo following [Creating a pull request from a fork](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork). 
 	
-	Hint: you can try creating a branch from a specific branch by `git checkout -b [new branch name] [old branch name]`
+*Hint: you can try creating a branch from a specific branch by `git checkout -b [new branch name] [old branch name]`*
 
 
 ## Git Cheatsheet

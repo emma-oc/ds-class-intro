@@ -27,7 +27,7 @@ Upcoming topics:
 	5. Iteration: loops and comprehensions
 	6. Writing functions
 	7. Reading and writing files
-	8. Useful basic models
+	8. Useful basic modules
 	9. Coding challenge examples on HackerRank
 
 #### 2. Data manipulation using `pandas`
