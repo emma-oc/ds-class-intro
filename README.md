@@ -9,18 +9,23 @@ You can run python in different settings, for example, you can use `jupyter` not
 
 [class01](https://github.com/emma-oc/ds-class-intro/tree/class01/class01):
 
-	0. Environment set up
+	0. Environment set up (material in section 0)
 	1. Assign values to variables and simple arithmetics
 	2. `Print` and simple string manimulation
 [class02](https://github.com/emma-oc/ds-class-intro/tree/class02/class02)
 
 	3. Value comparison and conditions using `if-elif-else`
 	4. Collections: list, tuple, set, and dictionary
-	5. Iteration: loops and comprehensions
-	6. Writing functions
+	*  Git - Commiting, Pushing, and Pull Request
+
+Homework01(Exercise0,3,4) is due next class. Please refer to [homework submission instructions](https://github.com/emma-oc/ds-class-intro/blob/class02/class01/git_setup.md#instructions-for-homework-1-submission) for how to open pull request for submission.
+
+
 
 Upcoming topics:
-	
+
+	5. Iteration: loops and comprehensions
+	6. Writing functions
 	7. Reading and writing files
 	8. Useful basic models
 	9. Coding challenge examples on HackerRank
