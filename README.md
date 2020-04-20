@@ -2,7 +2,10 @@
 
 Welcome to the intro-level DS class where we will learn about python basics and how to use python for exploratory data analysis. Hope you'll enjoy the class and learn something from it.
 
-#### 0. Get started with [Anaconda](https://github.com/emma-oc/ds-class-intro/blob/master/class01/Anaconda_setup.md) and [Git](https://github.com/emma-oc/ds-class-intro/blob/master/class01/git_setup.md)
+#### 0. Get started
+- [Anaconda set up](https://github.com/emma-oc/ds-class-intro/blob/master/class01/Anaconda_setup.md) 
+- [Git introduction](https://github.com/emma-oc/ds-class-intro/blob/master/class01/git_setup.md)
+- [Homework submisstion instructions]()
 
 #### 1. Python basics
 You can run python in different settings, for example, you can use `jupyter` notebook for interactive exploration, use interpreter in command line by typing `python` in terminal (you'll see `>>>` prompt appear), or run python script in command line by `python <your_script>.py`. We will be using notebooks for the class as it's easy to follow with [markdown](https://guides.github.com/features/mastering-markdown/) and easy to interact with.
@@ -18,7 +21,8 @@ You can run python in different settings, for example, you can use `jupyter` not
 	4. Collections: list, tuple, set, and dictionary
 	*  Git - Commiting, Pushing, and Pull Request
 
-Homework01(Exercise0,3,4) is due next class. Please refer to [homework submission instructions](https://github.com/emma-oc/ds-class-intro/blob/class02/class01/git_setup.md#instructions-for-homework-1-submission) for how to open pull request for submission.
+
+Homework_01(Exercise0,3,4) is due next class. Please refer to [homework submission instructions](https://github.com/emma-oc/ds-class-intro/blob/class02/class01/git_setup.md#instructions-for-homework-1-submission) for how to open pull request for submission.
 
 
 
