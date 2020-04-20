@@ -5,7 +5,7 @@ Welcome to the intro-level DS class where we will learn about python basics and 
 #### 0. Get started
 - [Anaconda set up](https://github.com/emma-oc/ds-class-intro/blob/master/class01/Anaconda_setup.md) 
 - [Git introduction](https://github.com/emma-oc/ds-class-intro/blob/master/class01/git_setup.md)
-- [Homework submisstion instructions]()
+- [Set up you forked repo for commit and push + Homework submisstion instructions](https://github.com/emma-oc/ds-class-intro/blob/master/Git-setup-and-hw-instruction.md)
 
 #### 1. Python basics
 You can run python in different settings, for example, you can use `jupyter` notebook for interactive exploration, use interpreter in command line by typing `python` in terminal (you'll see `>>>` prompt appear), or run python script in command line by `python <your_script>.py`. We will be using notebooks for the class as it's easy to follow with [markdown](https://guides.github.com/features/mastering-markdown/) and easy to interact with.
@@ -15,23 +15,24 @@ You can run python in different settings, for example, you can use `jupyter` not
 	0. Environment set up (material in section 0)
 	1. Assign values to variables and simple arithmetics
 	2. `Print` and simple string manimulation
-[class02](https://github.com/emma-oc/ds-class-intro/tree/class02/class02)
+[class02](https://github.com/emma-oc/ds-class-intro/tree/class02/class02):
 
 	3. Value comparison and conditions using `if-elif-else`
 	4. Collections: list, tuple, set, and dictionary
 	*  Git - Commiting, Pushing, and Pull Request
 
+Homework_01(Exercise0,3,4) is due next class. Please refer to [homework submission instructions](https://github.com/emma-oc/ds-class-intro/blob/master/Git-setup-and-hw-instruction.md#instructions-for-homework-1-submission) for how to open pull request for submission.
 
-Homework_01(Exercise0,3,4) is due next class. Please refer to [homework submission instructions](https://github.com/emma-oc/ds-class-intro/blob/class02/class01/git_setup.md#instructions-for-homework-1-submission) for how to open pull request for submission.
-
-
-
-Upcoming topics:
+[class03]():
 
 	5. Iteration: loops and comprehensions
 	6. Writing functions
 	7. Reading and writing files
-	8. Useful basic modules
+
+
+Upcoming topics:
+
+	8. Useful basic modules (numpy, os, datetime)
 	9. Coding challenge examples on HackerRank
 
 #### 2. Data manipulation using `pandas`
