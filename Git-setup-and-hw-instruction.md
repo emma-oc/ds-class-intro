@@ -19,7 +19,7 @@
 	  `git remote add upstream https://github.com/emma-oc/ds-class-intro.git`
 	- Verify the new upstream repository you've specified for your fork by running `git remote -v` again. You should now see at least 4 of them including `upstream` pull and fetch, and `origin` pull and fetch.
 	
-5. **Do this every time before you start working on your local repo**. [Sync a fork](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork) to get the latest updates from class repo.
+5. **Do this whenever you'd like to add upstream changes to your forked repo**. [Sync a fork](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork) to get the latest updates from class repo.
 	
 	- Fetch the branches and their respective commits from the upstream repo by running `git fetch upstream`
 	- If you'd like to update your forked remote with upstream changes, you can merge in and push the upstream changes to your branch in the forked remote.
