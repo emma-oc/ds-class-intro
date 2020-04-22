@@ -181,8 +181,9 @@ At this stage, you’ll receive a call that another issue is critical and you ne
 
 On the branch you'd like to merge into: `git merge <branch to be merged in>`
 
+## Please ignore the following section and refer to the new documentation [Git-setup-and-hw-instruction.md](https://github.com/emma-oc/ds-class-intro/blob/class02/Git-setup-and-hw-instruction.md) for instructions.
 
-# Task for the class:
+<del># Task for the class:
 
 1. In terminal/command line, navigate to the folder you want to put this repo.
 
@@ -258,7 +259,7 @@ git commit -m "test git function"
 	git push
 	```
 	
-	If everything works out fine, you should see your pushed changes synced with you GitHub.
+	If everything works out fine, you should see your pushed changes synced with you GitHub.</del>
 	
 	
 # Instructions for Homework 1 Submission:
