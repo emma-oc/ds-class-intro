@@ -23,7 +23,9 @@ def calculation(a, b):
 	'''
 
 	# code up your solution here
-
+    sum = a + b
+    diff = a - b
+    return (sum, diff)
 
 
 def triangle_lambda():
@@ -59,10 +61,15 @@ def sort_words(hyphen_str):
 	'''
 
 	# code up your solution here
+    hyphen_str = str(input)
+    
+    hyphen = sort(hyphen_str)
+    
+    return hyphen
 
 
 
-def perfect_number():
+def perfect_number(n):
 	'''
 	Write a Python function to check whether a number is perfect or not.
 
@@ -82,6 +89,11 @@ def perfect_number():
 	'''
 
 	# code up your answer here
+    sum = 0
+    for x in range(1, n):
+        if n % x == 0:
+            sum += x
+    return sum == n
 
 
 if __name__ == '__main__':
