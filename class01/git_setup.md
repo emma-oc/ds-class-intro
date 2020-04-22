@@ -20,6 +20,7 @@ Make sure you have the command line tool (terminal) but not the GitHub GUI deskt
 
 > GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 
+
 If you do not have a GitHub account yet, please go ahead and create one. Follow the instructions in account set up to configure your local Git. If you need help, [this page with instructions to set up and authenticate](https://help.github.com/en/github/getting-started-with-github/set-up-git) might be a good source to check how to configure user name and account in Git. Generally you can choose to [use HTTPS with password caching](https://help.github.com/en/github/using-git/caching-your-github-password-in-git) or [generat and add SSH key](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) to ssh-agent.
 
 If you're interested, spend 10 min to read and follow [this `Hello-Would` tutorial](https://guides.github.com/activities/hello-world/) to get some initial ideas for version control, repos, and how to use GitHub. 
