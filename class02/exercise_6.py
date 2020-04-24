@@ -1,6 +1,7 @@
 '''
 Edit this file to complete Exercise 6
 '''
+#%%
 
 def calculation(a, b):
 	'''
@@ -23,10 +24,14 @@ def calculation(a, b):
 	'''
 
 	# code up your solution here
+	sum=a+b
+	difference=abs(a-b)
+	return (sum,difference)
 
+calculation(40,10)
+#%%
 
-
-def triangle_lambda():
+def triangle_lambda(base,height):
 	'''
 	Return a lambda object that takes in a base and height of triangle
 	and computes the area.
@@ -37,9 +42,12 @@ def triangle_lambda():
 	Returns:
 	lambda_triangle_area: the lambda
 	'''
+	lambda_triangle_area=(base*height)/2
+	return (lambda_triangle_area)
 
+triangle_lambda(2,5)
 
-
+#%%
 def sort_words(hyphen_str):
 	'''
 	Write a Python program that accepts a hyphen-separated sequence of words 
@@ -57,12 +65,17 @@ def sort_words(hyphen_str):
 	sorted_str: string in a hyphen-separated sequence after 
 	sorting them alphabetically
 	'''
+	output=sorted(hyphen_str.split("-"))
+	output_str="-".join(output)
+	return(output_str)
 
 	# code up your solution here
+#%%
+hyphen_str='green-red-yellow-black-white'
+sort_words(hyphen_str)
+#%%
 
-
-
-def perfect_number():
+def perfect_number(number):
 	'''
 	Write a Python function to check whether a number is perfect or not.
 
@@ -82,7 +95,18 @@ def perfect_number():
 	'''
 
 	# code up your answer here
-
-
+	divisor_list=[]
+	for i in range (1,number):
+		if number % i ==0:
+			divisor_list.append(i)
+	if sum(divisor_list)==number and (sum(divisor_list)+number)/2==(number):
+		boolean=True
+	else:
+		boolean=False
+	return(boolean)
+perfect_number(6)
+#%%
 if __name__ == '__main__':
 	pass
+
+# %%
