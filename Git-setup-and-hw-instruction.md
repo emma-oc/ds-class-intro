@@ -1,3 +1,12 @@
+# Recommended workflow:
+As we've seen some conflicts with upstream and local changes, let's try to follow the following workflow if possible to make the repo cleaner.
+
+1. After forking the repo, **DON'T** make changes in any existing branches.
+2. Make a new branch if you want to make any modification. In this way, your local changes only exist in this new branch.
+3. Whenever the upstream repo is updated, you can `fetch` upstream and merge changes into your local branches.
+4. Then you can `merge` changes into the new branch with your work, or `rebase` your new branch on updated branch (now synced with upstream).
+5. You will push all your changes to the new branch you created, not existing branches in the synced fork. This way, then branches in your fork only have changes from upstream so no conflict will occur.
+
 # Setting up your forked repo:
 
 1. In terminal/command line, navigate to the folder you want to put this repo.

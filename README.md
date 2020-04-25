@@ -23,9 +23,15 @@ You can run python in different settings, for example, you can use `jupyter` not
 
 Homework_01(Exercise0,3,4) is due next class. Please refer to [homework submission instructions](https://github.com/emma-oc/ds-class-intro/blob/master/Git-setup-and-hw-instruction.md#instructions-for-homework-1-submission) for how to open pull request for submission.
 
-[class03]():
+[class03](https://github.com/emma-oc/ds-class-intro/tree/class03/class03):
 
+	*  HW01 review
 	5. Iteration: loops and comprehensions
+
+You can get started on Homework_02 and work on Exercise 5. The entire homework will be assigned next class with more problems. This time, feel free to use `.py` for all submissions.
+
+[class04]()
+
 	6. Writing functions
 	7. Reading and writing files
 
