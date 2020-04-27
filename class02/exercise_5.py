@@ -5,10 +5,11 @@ Edit this file to complete Exercise 5
 # 1. rite a Python program to find those numbers which are divisible by 7 and multiple of 5, between 1500 and 2700 (both included).
 
 # code up your solution here
-
-
-
-
+for num in range(1500,2701):
+  if num%7 == 0 and num%5 == 0:
+    print(num)
+  else:
+    continue
 
 # 2. Write a Python program to count the number of even and odd numbers from a series of numbers.
 
@@ -18,9 +19,16 @@ Edit this file to complete Exercise 5
 # >>> Number of odd numbers : 5
 
 # code up your solution here
-
-
-
+even = 0
+odd = 0
+numbers = list(int(num) for num in input("Enter the list numbers separated by ',': ").strip("(").strip(")").strip().split(","))
+for num in numbers:
+    if num % 2 == 0:
+        even = even+1
+    else:
+        odd = odd+1
+print("Number of even numbers :{}".format(even))
+print("Number of odd numbers :{}".format(odd));
 
 # 3. Write a Python program which iterates the integers from 0 to 50. For multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
 
@@ -34,10 +42,15 @@ Edit this file to complete Exercise 5
 # >>> ...
 
 # code up your solution here
-
-
-
-
+for i in range(51):
+    if i%3 == 0 and i%5 != 0:
+        print("Fizz")
+    elif i%3 != 0 and i%5 == 0:
+        print("Buzz")
+    elif i%3 ==0 and i%5 == 0:
+        print("FizzBuzz")
+    else:
+        print(i);
 
 # 4. Given a list iterate it and display numbers which are divisible by 5 and if you find number greater than 150 stop the loop iteration
 
@@ -49,25 +62,36 @@ Edit this file to complete Exercise 5
 # >>> 150
 
 # code up your solution here
-
-
-
-
+numbers = list(int(num) for num in input("Enter the list numbers separated by ',': ").strip("[").strip("]").strip().split(","))
+for num in numbers:
+    if num <= 150:
+        if num % 5 == 0:
+            print(num)
+        else:
+            continue
+    else:
+        break;
 # 5. Pick one of the questions above and use range() for a different solution
 
 # code up your solution here
-
-
 
 
 # 6. Pick one of the question above and use comprehension for a different solution
 
 # code up your solution here
 
-
+list1 = ["Fizz" if i%3 == 0 and i%5 != 0 else "Buzz" if i%3 != 0 and i%5 == 0 else "FizzBuzz" if i%3 ==0 and i%5 == 0 else i for i in range(51)]
+print(list1)
 
 
 # 7. Pcik one of the questions above and use while loop for a different solution
 
 # code up your solution here
+num = 1500
+while num >= 1500 and num <=2700:
+  if num%7 == 0 and num%5 == 0:
+    print(num)
+    num = num + 1
+  else:
+    continue
 
