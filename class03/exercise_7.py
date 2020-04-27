@@ -96,3 +96,5 @@ def read_json(file):
 	# code up you solution here
 
 
+if __name__=="__main__":
+	pass
