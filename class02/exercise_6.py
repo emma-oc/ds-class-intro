@@ -23,7 +23,10 @@ def calculation(a, b):
 	'''
 
 	# code up your solution here
-
+	def calculation(a,b):
+    		sum = a + b
+    		diff = a - b
+    		return [sum,diff];
 
 
 def triangle_lambda():
@@ -37,7 +40,9 @@ def triangle_lambda():
 	Returns:
 	lambda_triangle_area: the lambda
 	'''
-
+	def triangle_lambda():
+		lambda_triangle_area = lambda b,h: b*h/2
+		return lambda_triangle_area;
 
 
 def sort_words(hyphen_str):
@@ -59,7 +64,13 @@ def sort_words(hyphen_str):
 	'''
 
 	# code up your solution here
-
+	def sort_words(hyphen_str):
+    		words_list = hyphen_str.split("-")
+    		words_list.sort()
+    		hyphen_str_sorted = '-'.join(words_list)
+    		return hyphen_str_sorted
+    
+		sort_words('green-red-yellow-black-white')
 
 
 def perfect_number():
@@ -82,7 +93,30 @@ def perfect_number():
 	'''
 
 	# code up your answer here
-
-
+	def is_prime_number(x):
+    		if x >= 2:
+        		for y in range(2,x):
+           			 if not ( x % y ):
+                			return False
+   	 	else:
+        		return False
+    		return True;
+	
+	def multiplyList(myList) : 
+    		result = 1
+    		for x in myList: 
+         		result = result * x  
+    		return result;
+	
+	def perfect_number(num):
+    		prime_divisors = [1]
+    		for i in range(1, int(num / 2) + 1):
+        		if num % i == 0:
+            			if is_prime_number(i) == True:
+                			prime_divisors.append(i)
+    		if (sum(prime_divisors)+num)/2 == num and multiplyList(prime_divisors) == num:
+        		return True
+    		else:
+        		return False
 if __name__ == '__main__':
 	pass
