@@ -25,7 +25,7 @@ def calculation(a, b):
 	# code up your solution here
 	summation = a + b
 	diff = a - b
-	return[summation, diff]
+	return summation, diff
 
 
 
