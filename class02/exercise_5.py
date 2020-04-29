@@ -4,7 +4,22 @@ Edit this file to complete Exercise 5
 
 # 1. rite a Python program to find those numbers which are divisible by 7 and multiple of 5, between 1500 and 2700 (both included).
 
-# code up your solution here
+    Solution 1:
+    
+    answerlist=list()
+    for a in range(1500,2701):
+        if a%5==0 and a%7==0:
+            answerlist.append(a)
+        else:
+            pass
+    print(answerlist)
+    
+    Solution 2:
+    
+    answerlist=list()
+    for a in range(1505,2701,35)
+        answerlist.append(a)
+    print(answerlist)            
 
 
 
@@ -17,7 +32,19 @@ Edit this file to complete Exercise 5
 # >>> Number of even numbers : 4
 # >>> Number of odd numbers : 5
 
-# code up your solution here
+evenlist=list()
+oddlist=list()
+
+numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9)
+for a in numbers:
+    if a%2==0:
+        evenlist.append(a)
+    else:
+        oddlist.append(a)
+
+print("number of even nubmers : "+ str(len(evenlist)))
+print("number of odd nubmers : "+ str(len(oddlist)))
+
 
 
 
@@ -33,8 +60,15 @@ Edit this file to complete Exercise 5
 # >>> buzz
 # >>> ...
 
-# code up your solution here
-
+for a in range(0,51):
+    if a%15==0:
+        print("fizzbuzz")
+    elif a%5==0:
+        print("buzz")
+    elif a%3==0:
+        print("fizz")
+    else:
+        print(a)
 
 
 
@@ -48,26 +82,39 @@ Edit this file to complete Exercise 5
 # >>> 75
 # >>> 150
 
-# code up your solution here
+for a in list1:
+    if a<=150:
+        if a%5==0:
+            print(a)
+        else:
+            pass
+    else:
+        pass
+ 
+        
 
 
 
 
 # 5. Pick one of the questions above and use range() for a different solution
 
-# code up your solution here
-
-
+print([a for a in range(1505,2701,35)])
 
 
 # 6. Pick one of the question above and use comprehension for a different solution
 
-# code up your solution here
-
+print([a for a in range(1505,2701,35)])
 
 
 
 # 7. Pcik one of the questions above and use while loop for a different solution
 
-# code up your solution here
+answerlist=[]
+i = 1500 # iter/i iteration
+while i < 2701:
+    if i%5==0 and i%7==0:
+        answerlist.append(i)
+    i += 1
+        
+print(answerlist)
 
