@@ -22,8 +22,9 @@ def calculation(a, b):
 	diff: difference of two numbers
 	'''
 
-	# code up your solution here
-
+def calculation (a,b):
+    return (a+b,a-b)
+ 
 
 
 def triangle_lambda():
@@ -37,7 +38,8 @@ def triangle_lambda():
 	Returns:
 	lambda_triangle_area: the lambda
 	'''
-
+def triangle_lambda(base, height)
+    return base*height/2
 
 
 def sort_words(hyphen_str):
@@ -57,8 +59,14 @@ def sort_words(hyphen_str):
 	sorted_str: string in a hyphen-separated sequence after 
 	sorting them alphabetically
 	'''
+def sort_words(hyphen_str):
+    seplist=hyphen_str.split("-")
+    seplist.sort
+    str = "-"
+    return str.join(seplist)
+    
+    
 
-	# code up your solution here
 
 
 
@@ -83,6 +91,12 @@ def perfect_number():
 
 	# code up your answer here
 
+def perfect_number(a):
+    listdivisors=list()
+    for i in range (1,a):
+        if a%i==0:
+            listdivisors.append(i)
+    return sum(listdivisors) == a
+    
 
-if __name__ == '__main__':
-	pass
+            
