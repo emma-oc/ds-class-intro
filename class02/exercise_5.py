@@ -79,7 +79,7 @@ print('Question 4')
 list3 = [12, 15, 32, 42, 55, 75, 122, 132, 150, 180, 200]
 for num in list3:
     if num > 150:
-        break;
+        break
     if num % 5 == 0:
         print(num)
 print('\n')
