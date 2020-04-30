@@ -34,14 +34,15 @@ You can run python in different settings, for example, you can use `jupyter` not
 	5. Iteration: loops and comprehensions
 	6. Writing functions
 
-**Homework_02 (Exercise 5, 6)** is assigned. It won't be due until we finishes Section 6 next week, but feel free to start working on it now.
-
-**This time, please submit the `.py` files for all submissions. Similarly, once you're done, you can open a PR with these files.**
-
 [class05](https://github.com/emma-oc/ds-class-intro/blob/master/class03)
 
 	6. Writing functions
 	7. Reading and writing files
+
+**Homework_02 (Exercise 5, 6, 7)** is assigned, it's due next Wednesday 5/6.
+
+*This time, please submit the `.py` files for all submissions. Similarly, once you're done, you can open a PR with these files.*
+
 
 ##### Upcoming topics:
 
