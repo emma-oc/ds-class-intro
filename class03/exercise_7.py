@@ -2,10 +2,11 @@
 Edit this file to complete Exercise 7
 '''
 
+
 # import the modules you need here
 
 
-def check_path(path):
+def check_path(pathname):
 	'''
 	check if the input path exists, if it exists, return True and a
 	list containing the following
@@ -31,9 +32,20 @@ def check_path(path):
 	# if doesn't exist
 	>>> False, []
 	'''
+	import os
+	from os import path
+	checklist = []
+	if path.exists(pathname):
+		check1 = 'True'
+		checklist.append(path.isabs(pathname))
+		checklist.append(path.isdir(pathname))
+		checklist.append(path.isfile(pathname))
+	else:
+		check1 = 'False'
+	print(check1, ',', checklist)
 
 
-def read_csv(file):
+def read_csv(filepath):
 	'''
 	reads in a csv file then return the total number of lines in it
 
@@ -49,6 +61,13 @@ def read_csv(file):
 	'''
 
 	# code up your solution here
+	import csv
+	row_count = 0
+	with open(filepath, 'r') as f:
+		reader = csv.reader(f, delimiter=',')
+		for row in reader:
+			row_count += 1
+	return row_count
 
 
 def write_csv(data_list, output_file):
@@ -58,7 +77,7 @@ def write_csv(data_list, output_file):
 	every element in the sublist is separated by comma
 
 	Arguments:
-	data_list: input data list, each elemet is a list representing 
+	data_list: input data list, each element is a list representing
 		a row with values for each column
 	file: path to save the csv file 
 
@@ -76,6 +95,11 @@ def write_csv(data_list, output_file):
 	'''
 
 	# code up your solution here
+	import csv
+	with open(output_file, 'w', newline='') as f:
+		writer = csv.writer(f)
+		for sublist in data_list:
+			writer.writerow(sublist)
 
 
 def read_json(file):
@@ -93,8 +117,17 @@ def read_json(file):
 	>>> [{'name': 'emma', 'skill': {'coding1': 'python', 'coding2': 'r'}, 'role': 0}]
 	'''
 
-	# code up you solution here
+
+# code up you solution here
+	import json
+	with open(file) as f:
+		js = json.load(f)
+	return js
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
+	check_path('AMZN.csv')
+	print(read_csv('AMZN.csv'))
+	write_csv(data_list=[(1, 2, 3, 4), (5, 6, 7, 8), (9, 10, 11, 12)], output_file='example.csv')
+	print(read_json('some.json'))
 	pass
