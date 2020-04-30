@@ -21,18 +21,32 @@ You can run python in different settings, for example, you can use `jupyter` not
 	4. Collections: list, tuple, set, and dictionary
 	*  Git - Commiting, Pushing, and Pull Request
 
-Homework_01(Exercise0,3,4) is due next class. Please refer to [homework submission instructions](https://github.com/emma-oc/ds-class-intro/blob/master/Git-setup-and-hw-instruction.md#instructions-for-homework-1-submission) for how to open pull request for submission.
+**Homework_01(Exercise0,3,4)** is due next class. Please refer to [homework submission instructions](https://github.com/emma-oc/ds-class-intro/blob/master/Git-setup-and-hw-instruction.md#instructions-for-homework-1-submission) for how to open pull request for submission.
 
-[class03]():
+[class03](https://github.com/emma-oc/ds-class-intro/blob/master/class02):
+
+	*  HW01 review
+	5. Iteration: loops and comprehensions
+
+
+[class04](https://github.com/emma-oc/ds-class-intro/blob/master/class02)
 
 	5. Iteration: loops and comprehensions
 	6. Writing functions
+
+[class05](https://github.com/emma-oc/ds-class-intro/blob/master/class03)
+
+	6. Writing functions
 	7. Reading and writing files
 
+**Homework_02 (Exercise 5, 6, 7)** is assigned, it's due next Wednesday 5/6.
 
-Upcoming topics:
+*This time, please submit the `.py` files for all submissions. Similarly, once you're done, you can open a PR with these files.*
 
-	8. Useful basic modules (numpy, os, datetime)
+
+##### Upcoming topics:
+
+	8. Intro to code performance ~~Useful basic modules (numpy, os, datetime)~~
 	9. Coding challenge examples on HackerRank
 
 #### 2. Data manipulation using `pandas`
