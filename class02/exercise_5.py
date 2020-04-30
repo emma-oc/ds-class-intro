@@ -64,3 +64,10 @@ Edit this file to complete Exercise 5
 
 # code up your solution here
 
+
+
+
+# 7. Pcik one of the questions above and use while loop for a different solution
+
+# code up your solution here
+
