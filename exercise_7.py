@@ -1,9 +1,13 @@
 '''
 Edit this file to complete Exercise 7
 '''
-
+#%%
+import os
+import pandas as pd
+import json
+import  csv
 # import the modules you need here
-
+#%%
 
 def check_path(path):
 	'''
@@ -31,7 +35,22 @@ def check_path(path):
 	# if doesn't exist
 	>>> False, []
 	'''
+	isexist=os.path.exists(path)
+	
+	if isexist==True:
+		isabs = os.path.isabs(path) 
+		isDirectory = os.path.isdir(path)
+		isFile = os.path.isfile(path)
+		return_list=[isabs,isDirectory,isFile]
+	else:
+		return_list=[] 
+	return(isexist,return_list)
 
+#%%
+path=os.getcwd()
+check_path(path)
+
+#%%
 
 def read_csv(file):
 	'''
@@ -47,10 +66,14 @@ def read_csv(file):
 	read_csv('AMZN.csv')
 	>>> 14
 	'''
-
+	df=read_csv(file)
+	count_row = df.shape[0] 
+	return (count_row)
 	# code up your solution here
 
 
+
+#%%
 def write_csv(data_list, output_file):
 	'''
 	write out a csv file for the data list (structed as list of list), 
@@ -74,6 +97,9 @@ def write_csv(data_list, output_file):
 	5,6,7,8
 	9,10,11,12
 	'''
+	with open(output_file,"w") as f:
+		wr = csv.writer(data_list,delimiter="\n")
+		wr.writerow(output_file)
 
 	# code up your solution here
 
@@ -94,7 +120,11 @@ def read_json(file):
 	'''
 
 	# code up you solution here
+	
 
+	with open('path_to_file/person.json') as f:
+		json = json.load(f)
+	return json
 
 if __name__=="__main__":
 	pass
