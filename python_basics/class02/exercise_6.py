@@ -21,8 +21,8 @@ def calculation(a, b):
 	sum: sum of two numbers
 	diff: difference of two numbers
 	'''
-
-	# code up your solution here
+	return (a + b, a - b)
+print(calculation(40,10))
 
 
 
@@ -37,8 +37,11 @@ def triangle_lambda():
 	Returns:
 	lambda_triangle_area: the lambda
 	'''
-
-
+	base = input("Enter the base of the triangle: ")
+	height = input("Enter the height of the triangle: ")
+	f = lambda base, height: base * height / 2
+	return f
+print(triangle_lambda())
 
 def sort_words(hyphen_str):
 	'''
