@@ -37,10 +37,8 @@ def triangle_lambda():
 	Returns:
 	lambda_triangle_area: the lambda
 	'''
-	base = input("Enter the base of the triangle: ")
-	height = input("Enter the height of the triangle: ")
-	f = lambda base, height: base * height / 2
-	return f
+	function = lambda base, height: base * height / 2
+	return function(2,2)
 print(triangle_lambda())
 
 def sort_words(hyphen_str):
@@ -60,10 +58,13 @@ def sort_words(hyphen_str):
 	sorted_str: string in a hyphen-separated sequence after 
 	sorting them alphabetically
 	'''
-
-	# code up your solution here
-
-
+	aStr = ''
+	split_words = hyphen_str.split("-")
+	sortedList = sorted(split_words)
+	#print(sortedList)
+	s = '-'
+	return "'" + s.join(sortedList) + "'"
+print(sort_words('green-red-yellow-black-white'))
 
 def perfect_number():
 	'''
@@ -84,8 +85,18 @@ def perfect_number():
 	perfect: boolean, True if number is perfect
 	'''
 
-	# code up your answer here
-
+	divisorList = []
+	for i in range(1, num + 1):
+		if num % i == 0:
+			divisorList.append(i)
+	#print(divisorList)
+	summation = 0
+	for element in divisorList:
+		summation += element
+	if summation / 2 == num:
+		return True
+	else:
+		return False
 
 if __name__ == '__main__':
 	pass
