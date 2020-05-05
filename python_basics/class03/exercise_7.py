@@ -31,6 +31,14 @@ def check_path(path):
 	# if doesn't exist
 	>>> False, []
 	'''
+	exist_flag = True
+	path_info_list = [os.path.isabs(path), os.path.isdir(path), os.path.isfile(path)]
+	if os.path.isdir(path) == True or os.path.isfile(path):
+		exist_flag = True
+		return exist_flag, path_info_list
+	else:
+		exist_flag = False
+		return exist_flag, []
 
 
 def read_csv(file):
@@ -48,7 +56,11 @@ def read_csv(file):
 	>>> 14
 	'''
 
-	# code up your solution here
+	counts = Counter()
+	with open(file, 'r') as theFile:
+		for line in theFile:
+			counts['number of lines'] += 1
+	return counts['number of lines']
 
 
 def write_csv(data_list, output_file):
@@ -75,7 +87,10 @@ def write_csv(data_list, output_file):
 	9,10,11,12
 	'''
 
-	# code up your solution here
+	with open(output_file, 'w') as w:
+		writer = csv.writer(w)
+		for element in data_list:
+			writer.writerow(element)
 
 
 def read_json(file):
@@ -93,7 +108,10 @@ def read_json(file):
 	>>> [{'name': 'emma', 'skill': {'coding1': 'python', 'coding2': 'r'}, 'role': 0}]
 	'''
 
-	# code up you solution here
+	with open(file) as file:
+		js = json.load(file)
+	return js
+print(read_json('some.json'))
 
 
 if __name__=="__main__":
