@@ -3,7 +3,8 @@ Edit this file to complete Exercise 7
 '''
 
 # import the modules you need here
-
+import os
+import json
 
 def check_path(path):
 	'''
@@ -31,6 +32,10 @@ def check_path(path):
 	# if doesn't exist
 	>>> False, []
 	'''
+	exist_flag = os.path.exists(path)
+	path_info_list = [os.path.isabs(path), os.path.isdir(path), os.path.isfile(path)]
+	return exist_flag, path_info_list
+
 
 
 def read_csv(file):
@@ -49,6 +54,13 @@ def read_csv(file):
 	'''
 
 	# code up your solution here
+	count = 0
+	with open(file) as file:
+		for line in file:
+			count += 1
+	return count
+
+
 
 
 def write_csv(data_list, output_file):
@@ -76,6 +88,17 @@ def write_csv(data_list, output_file):
 	'''
 
 	# code up your solution here
+	with open(output_file, 'w') as file:
+		for sub in data_list:
+			for elmt in sub:
+				if elmt != sub[len(sub) - 1]:
+					file.write(str(elmt) + ',')
+				else:
+					file.write(str(elmt))
+			file.write('\n')
+
+
+
 
 
 def read_json(file):
@@ -94,6 +117,9 @@ def read_json(file):
 	'''
 
 	# code up you solution here
+	with open(file) as file:
+		return json.load(file)
+
 
 
 if __name__=="__main__":
