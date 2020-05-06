@@ -354,7 +354,7 @@ read_csv2('AMZN.csv')
 
 '''
 3.def write_csv(data_list, output_file):
-	'''
+	''' '''
 	write out a csv file for the data list (structed as list of list),
 	where each item in the data_list is a row in output file, and
 	every element in the sublist is separated by comma
@@ -375,6 +375,7 @@ read_csv2('AMZN.csv')
 	1,2,3,4
 	5,6,7,8
 	9,10,11,12
+	''''
 ''''
 data_list = [(1,2,3,4), (5,6,7,8), (9,10,11,12)]
 def write_csv(data_input,file_output):
@@ -385,6 +386,7 @@ def write_csv(data_input,file_output):
 		writer.writerow([input('row 3 column 1:'), input('row 3 column 2:'), input('row 3 column 3:'), input('row 3 column 4:')])
 '''
 
+'''need a better solution'''
 def write_csv(data_input,file_output):
 	with open(file_output, 'w', newline='') as file:
 		writer = csv.writer(file)
