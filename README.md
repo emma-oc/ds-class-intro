@@ -2,12 +2,12 @@
 
 Welcome to the intro-level DS class where we will learn about python basics and how to use python for exploratory data analysis. Hope you'll enjoy the class and learn something from it.
 
-#### 0. Get started
+### 0. Get started
 - [Anaconda set up](https://github.com/emma-oc/ds-class-intro/blob/master/python_basics/class01/Anaconda_setup.md) 
 - [Git introduction](https://github.com/emma-oc/ds-class-intro/blob/master/python_basics/class01/git_setup.md)
 - [Set up you forked repo for commit and push + Homework submisstion instructions](https://github.com/emma-oc/ds-class-intro/blob/master/Git-setup-and-hw-instruction.md)
 
-#### 1. Python basics
+### 1. Python basics
 You can run python in different settings, for example, you can use `jupyter` notebook for interactive exploration, use interpreter in command line by typing `python` in terminal (you'll see `>>>` prompt appear), or run python script in command line by `python <your_script>.py`. We will be using notebooks for the class as it's easy to follow with [markdown](https://guides.github.com/features/mastering-markdown/) and easy to interact with.
 
 [class01](https://github.com/emma-oc/ds-class-intro/tree/master/python_basics/class01):
@@ -44,26 +44,53 @@ You can run python in different settings, for example, you can use `jupyter` not
 *This time, please submit the `.py` files for all submissions. Similarly, once you're done, you can open a PR with these files.*
 
 
-##### Upcoming topics:
+[class06](https://github.com/emma-oc/ds-class-intro/tree/master/python_basics/class04)
 
 	8. Intro to code performance ~~Useful basic modules (numpy, os, datetime)~~
 	9. Coding challenge examples on HackerRank
 
-#### 2. Data manipulation using `pandas`
+### 2. Data manipulation using `pandas`
+
+[class07](https://github.com/emma-oc/ds-class-intro/tree/master/pandas_intro)
 
 	1. Intro to `pandas` 
 	2. Data wrangling
-	3. Using `pandas` for EDA
-	4. Basic plotting
+[class08](https://github.com/emma-oc/ds-class-intro/tree/master/pandas_intro)
 
-#### 3. Python intermediate
+	3. Using `pandas` for EDA
+
+**Homework_03** is assigned, it's due next Wednesday 5/13 so we can spend some time on discussion.
+
+*Please spend some time to work on EDA dataset so we can have a good discussion session next week.*
+
+- Pandas Exercise 5-8 in [notebook 03](https://github.com/emma-oc/ds-class-intro/tree/master/pandas_intro)
+- [World Happiness dataset](https://www.kaggle.com/unsdsn/world-happiness) exploration: ask one interesting question and try to answer it using the datasets.
+
+*Upcoming topics:*
+
+	4. Basic plotting + (slightly) advanced EDA topics
+	5. Mock Take-home case study
+
+### 3. Python intermediate (if time permits)
 
 	0. simple scripting
 	1. Introduction to `class`
 	2. Tests and others
 
+Resources:
+
+- Tutorial for `class` dev and oop: https://realpython.com/python-data-classes/
+- Intro to testing with different types of tests and tools: https://docs.python-guide.org/writing/tests/
+
 ##### Note:
 * Please try to follow and read the provide the material to make sure we can cover more stuff during class.
 * Please be respectiful of your own time and commit to as many of the assignments as possible:) 
 * The internet (primarily Stackoverflow) is your friend if you have questions - you won't be the first of the last with this question. Try to do a quick Google search and see you can find existing solutions.
+
+
+
+##### Ref:
+https://github.com/tdpetrou/Minimally-Sufficient-Pandas
+
+https://github.com/cmawer/pycon-2017-eda-tutorial/blob/master/EDA-cheat-sheet.md
 
