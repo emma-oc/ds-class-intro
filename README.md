@@ -59,16 +59,28 @@ You can run python in different settings, for example, you can use `jupyter` not
 
 	3. Using `pandas` for EDA
 
+**Homework_03** is assigned, it's due next Wednesday 5/13 so we can spend some time on discussion.
+
+*Please spend some time to work on EDA dataset so we can have a good discussion session next week.*
+
+- Pandas Exercise 5-8 in [notebook 03](https://github.com/emma-oc/ds-class-intro/tree/master/pandas_intro)
+- [World Happiness dataset](https://www.kaggle.com/unsdsn/world-happiness) exploration: ask one interesting question and try to answer it using the datasets.
+
 *Upcoming topics:*
 
-	4. Basic plotting
-	5. Mock Take-home 
+	4. Basic plotting + (slightly) advanced EDA topics
+	5. Mock Take-home case study
 
 ### 3. Python intermediate (if time permits)
 
 	0. simple scripting
 	1. Introduction to `class`
 	2. Tests and others
+
+Resources:
+
+- Tutorial for `class` dev and oop: https://realpython.com/python-data-classes/
+- Intro to testing with different types of tests and tools: https://docs.python-guide.org/writing/tests/
 
 ##### Note:
 * Please try to follow and read the provide the material to make sure we can cover more stuff during class.
