@@ -83,7 +83,7 @@ conda create -n py3basics python=3
 conda env list
 conda activate py3basics
 conda list
-conda install numpy pandas jupyter notebook git
+conda install numpy pandas jupyter notebook git matplotlib seaborn pandas-profiling scipy
 conda list
 conda env export > environment.yml
 cat environment.yml
