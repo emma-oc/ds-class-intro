@@ -66,10 +66,16 @@ You can run python in different settings, for example, you can use `jupyter` not
 - Pandas Exercise 5-8 in [notebook 03](https://github.com/emma-oc/ds-class-intro/tree/master/pandas_intro)
 - [World Happiness dataset](https://www.kaggle.com/unsdsn/world-happiness) exploration: ask one interesting question and try to answer it using the datasets.
 
-*Upcoming topics:*
+[class09](https://github.com/emma-oc/ds-class-intro/tree/master/pandas_intro)
 
 	4. Basic plotting + (slightly) advanced EDA topics
+	*  HW3 review
+
+[class10]
+
 	5. Mock Take-home case study
+	    - HackerRank test
+	    - Dataset exploration
 
 ### 3. Python intermediate (if time permits)
 
@@ -79,7 +85,7 @@ You can run python in different settings, for example, you can use `jupyter` not
 
 Resources:
 
-- Tutorial for `class` dev and oop: https://realpython.com/python-data-classes/
+- Tutorial for `class` dev and intro to OOP: https://realpython.com/python-data-classes/
 - Intro to testing with different types of tests and tools: https://docs.python-guide.org/writing/tests/
 
 ##### Note:
