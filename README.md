@@ -71,11 +71,15 @@ You can run python in different settings, for example, you can use `jupyter` not
 	4. Basic plotting + (slightly) advanced EDA topics
 	*  HW3 review
 
-[class10]
+[class10](https://github.com/emma-oc/ds-class-intro/tree/master/final_class)
 
 	5. Mock Take-home case study
-	    - HackerRank test
+	    - HackerRank coding test
 	    - Dataset exploration
+	6. Demo of `pandas-profiling`
+	7. Discussion on A/B test
+
+An intro on A/B testing: https://towardsdatascience.com/the-math-behind-a-b-testing-with-example-code-part-1-of-2-7be752e1d06f 
 
 ### 3. Python intermediate (if time permits)
 
@@ -100,3 +104,4 @@ https://github.com/tdpetrou/Minimally-Sufficient-Pandas
 
 https://github.com/cmawer/pycon-2017-eda-tutorial/blob/master/EDA-cheat-sheet.md
 
+https://github.com/Tian-Su/Walmart_MI_ML_interview_campus
