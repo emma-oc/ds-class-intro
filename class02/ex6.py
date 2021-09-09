@@ -4,8 +4,8 @@ Edit this file to complete Exercise 6
 
 def calculation(a, b):
 	'''
-	Write a function calculation() such that it can accept two variables 
-	and calculate the addition and subtraction of it. 
+	Write a function calculation() such that it can accept two variables
+	and calculate the addition and subtraction of it.
 	It must return both addition and subtraction in a single return call
 
 	Expected output:
@@ -14,7 +14,7 @@ def calculation(a, b):
 	>>> (50, 30)
 
 	Arguments:
-	a: first number 
+	a: first number
 	b: second number
 
 	Returns:
@@ -23,8 +23,9 @@ def calculation(a, b):
 	'''
 
 	# code up your solution here
-
-
+    addition = a + b
+    subtraction = a - b
+    return(addition, subtraction)
 
 def triangle_lambda():
 	'''
@@ -37,37 +38,38 @@ def triangle_lambda():
 	Returns:
 	lambda_triangle_area: the lambda
 	'''
-
-
+	function = lambda base, height: 1/2 * base * height
+	return("lambda_triangle_area: "+function)
 
 def sort_words(hyphen_str):
 	'''
-	Write a Python program that accepts a hyphen-separated sequence of words 
-	as input, and prints the words in a hyphen-separated sequence after 
+	Write a Python program that accepts a hyphen-separated sequence of words
+	as input, and prints the words in a hyphen-separated sequence after
 	sorting them alphabetically.
 
 	Expected output:
 	sort_words('green-red-yellow-black-white')
 	>>> 'black-green-red-white-yellow'
-	
+
 	Arguments:
 	hyphen_str: input string separated by hyphen
 
 	Returns:
-	sorted_str: string in a hyphen-separated sequence after 
+	sorted_str: string in a hyphen-separated sequence after
 	sorting them alphabetically
 	'''
 
 	# code up your solution here
-
-
+	words = hyphen_str.split('-')
+	words.sotr()
+	return('-',join(words))
 
 def perfect_number():
 	'''
 	Write a Python function to check whether a number is perfect or not.
 
-	A perfect number is a positive integer that is equal to the sum of 
-	its proper positive divisors. Equivalently, a perfect number is a number 
+	A perfect number is a positive integer that is equal to the sum of
+	its proper positive divisors. Equivalently, a perfect number is a number
 	that is half the sum of all of its positive divisors (including itself).
 
 	Example: 6 is a perfect number as 1+2+3=6. Also by the second definition,
@@ -82,7 +84,14 @@ def perfect_number():
 	'''
 
 	# code up your answer here
-
-
+	n = int(input("number: "))
+	total = 0
+	for i in range(1, n):
+		if n%i == 0:
+			total = total + i
+	if total ==  n:
+		return(True)
+	else:
+		return(False)
 if __name__ == '__main__':
 	pass
